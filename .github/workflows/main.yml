@@ -1,6 +1,10 @@
 name: to GZ
 on:
   workflow_dispatch:
+
+permissions:
+  contents: write 
+  
 jobs:
   convert:
     runs-on: ubuntu-latest
