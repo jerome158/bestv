@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>各省份IPTV源类型一览表</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .table-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        .table-header {
+            background: linear-gradient(90deg, #4f46e5, #7c3aed);
+            color: white;
+        }
+        .table-row:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        .table-row:hover {
+            background-color: #e2e8f0;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                <i class="fas fa-table mr-3"></i>各省份IPTV源类型一览表
+            </h1>
+            <p class="text-white/90 text-lg">按省份分类的宽带接入类型与源支持情况</p>
+        </div>
+
+        <!-- Legend -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <div class="bg-white/90 rounded-lg p-4 shadow-lg">
+                <div class="legend-item">
+                    <i class="fas fa-circle text-green-500 mr-2"></i>
+                    <span class="text-sm font-medium"></span>
+                </div>
+            </div>
+            <div class="bg-white/90 rounded-lg p-4 shadow-lg">
+                <div class="legend-item">
+                    <i class="fas fa-circle text-yellow-500 mr-2"></i>
+                    <span class="text-sm font-medium"> </span>
+                </div>
+            </div>
+            <div class="bg-white/90 rounded-lg p-4 shadow-lg">
+                <div class="legend-item">
+                    <i class="fas fa-circle text-blue-500 mr-2"></i>
+                    <span class="text-sm font-medium"> </span>
+                </div>
+            </div>
+            <div class="bg-white/90 rounded-lg p-4 shadow-lg">
+                <div class="legend-item">
+                    <i class="fas fa-circle text-gray-400 mr-2"></i>
+                    <span class="text-sm font-medium">未提供</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table Container -->
+        <div class="table-container overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="table-header">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">省份/直辖市</th>
+                            <th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">电信</th>
+                            <th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">联通</th>
+                            <th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">移动</th>
+                            <th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">广电/有线</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">北京</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">上海</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">天津</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">山西</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">甘肃</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">陕西</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">安徽</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i></td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">福建</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">贵州</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">云南</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">四川</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i></td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">重庆</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">湖南</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">湖北</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">广东</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-blue-500 mr-1"></i>  <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">广西</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-blue-500 mr-1"></i>  <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">河北</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">河南</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">海南</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">江苏</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">江西</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">辽宁</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">吉林</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">黑龙江</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">内蒙古</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">山东</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-blue-500 mr-1"></i>  <i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-blue-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">宁夏</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">新疆</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">浙江</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-yellow-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm"><i class="fas fa-circle text-green-500 mr-1"></i> </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                        </tr>
+                           
